@@ -17,11 +17,11 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: #333;
+    color: #fff;
     text-shadow: none;
     /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: .05rem solid #fff;
+    background-color: #c62828;
+    border: .05rem solid #8e0000;
 }
 
 
@@ -39,7 +39,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.863);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
     background: url(../assets/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -56,6 +56,26 @@ body {
 /*
  * Header
  */
+
+h1 {
+    font-family: pizzaAlfredo;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: pizza;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'pizza';
+    src: url('../fonts/panpizza.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'pizzaAlfredo';
+    src: url('../fonts/pizzaAlfredo.ttf') format('truetype');
+}
 
 .masthead {
     margin-bottom: 2rem;
@@ -108,6 +128,14 @@ body {
 .cover .btn-lg {
     padding: .75rem 1.25rem;
     font-weight: 700;
+}
+
+
+/* Custom cards */
+
+.menucard {
+    max-width: 500px;
+    margin: auto;
 }
 
 
